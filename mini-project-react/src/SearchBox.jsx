@@ -8,7 +8,7 @@ export default function SearchBox({ updateInfo }) {
 
   const API_URL =
     "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline";
-  const API_KEY = "LU9EDBRQMGJYNDJEGDETZDZLU";
+  const API_KEY = process.env.REACT_APP_API_KEY;
 
   const handleChange = (evt) => {
     setCity(evt.target.value);
